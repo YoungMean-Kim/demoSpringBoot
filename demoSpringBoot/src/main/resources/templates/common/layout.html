@@ -10,12 +10,21 @@
 	
 	<!-- BBS CSS -->
 	<link type="text/css" rel="stylesheet" th:href="@{/css/style.css}">
-	<title>WELCOME BBS!</title>
+	
+	<title>WELCOME BBS!</title> 
 </head>
 <body>
+	<nav th:replace="~{common/navbar :: navbarFragment}"></nav>
+	
 	<!-- 기본 템플릿 안에 삽입될 내용 Start -->
-	<div layout:fragment="content" class="container my-3">
-	</div>
+	<div layout:fragment="content" class="container my-3"></div>
 	<!-- 기본 템플릿 안에 삽입될 내용 End -->
+	
+	<!-- Bootstrap JS -->
+	<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+	
+	<!-- Javascript Start -->
+	<th:block layout:fragment="script"></th:block>
+	<!-- Javascript End -->
 </body>
 </html>

@@ -16,6 +16,7 @@ import kr.co.board.demo.answer.Answer;
 import kr.co.board.demo.answer.AnswerRepository;
 import kr.co.board.demo.question.Question;
 import kr.co.board.demo.question.QuestionRepository;
+import kr.co.board.demo.question.QuestionService;
 
 @SpringBootTest
 class DemoSpringBootApplicationTests {
@@ -140,5 +141,19 @@ class DemoSpringBootApplicationTests {
 		assertEquals(1, answerList.size());
 		assertEquals("네 자동으로 생성됩니다.", answerList.get(0).getContent());
 	}
+
+
+//	@Autowired
+//	private QuestionService questionService;
+//
+//	@Test
+//	void testJpa() {
+//		for (int i = 1; i <= 300; i++) {
+//            String subject = String.format("테스트 데이터입니다:[%03d]", i);
+//            String content = "테스트 데이타 내용 입력 입니다.";
+//            this.questionService.create(subject, content);
+//        }
+//
+//	}
 	
 }

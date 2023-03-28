@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html layout:decorate="~{common/layout}">
+<form th:if="${not #maps.isEmpty(params.data)} id="redirectForm" th:action="${params.redriectUri}" th:method="${params.method}" style="display: none;">
+	<input type="hidden" th:each="key, status : ${params.data.keySet()}" th:name="${key}" th:value="${params.data.get(key)}"/>
+</form>
+<script layout:fragment="script" type="text/javascript">
+	/* <![CDATA[ */
+	window.onload = () => {
+		const message = [[${params.message}]];
+		if(message){
+			alert(message);
+		}
+		const form = document.getElementById("redirectForm");
+
+		if(form){
+			form.submit();
+			return false;
+		}
+		
+		const redirectUri = [[${params.redirectUri}]];
+		location.href = redirectUri;
+	}
+	/* ]]> */
+</script>
+</html>
