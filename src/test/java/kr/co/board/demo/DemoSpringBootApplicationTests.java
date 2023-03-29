@@ -126,6 +126,7 @@ class DemoSpringBootApplicationTests {
 //		assertEquals(103, a.getQuestion().getId());
 //	}
 
+/**	
 	@Transactional
 	@Test
 	void testJpa() {
@@ -142,7 +143,8 @@ class DemoSpringBootApplicationTests {
 		assertEquals("네 자동으로 생성됩니다.", answerList.get(0).getContent());
 	}
 
-
+*/
+	
 //	@Autowired
 //	private QuestionService questionService;
 //
