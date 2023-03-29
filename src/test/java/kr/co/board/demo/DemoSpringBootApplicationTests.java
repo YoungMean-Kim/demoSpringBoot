@@ -119,7 +119,7 @@ class DemoSpringBootApplicationTests {
 	
 //	@Test
 //	void testJpa() {
-//		Optional<Answer> oa = this.answerRepository.findById(1);
+//		Optional<Answer> oa = this.answerRepository.findByI d(1);
 //		assertTrue(oa.isPresent());
 //		
 //		Answer a = oa.get();
