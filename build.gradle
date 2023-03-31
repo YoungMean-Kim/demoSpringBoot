@@ -44,5 +44,5 @@ tasks.named('test') {
 }
 
 war {
-    archiveName 'ROOT.war' // study(프로젝트명)/build/lib/ROOT.war
+    archiveName 'springboot_app.war' // study(프로젝트명)/build/lib/ROOT.war
 }
